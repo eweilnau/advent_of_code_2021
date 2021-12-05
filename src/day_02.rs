@@ -57,4 +57,3 @@ fn plot_course(course: &[CourseStep]) -> (i32, i32) {
     );
     (position, depth)
 }
-
