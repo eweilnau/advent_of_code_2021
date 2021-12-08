@@ -20,7 +20,7 @@ enum CourseStep {
 }
 
 fn get_course() -> Vec<CourseStep> {
-    std::fs::read_to_string("assets\\day_2_input.txt")
+    std::fs::read_to_string("assets\\day_02_input.txt")
         .unwrap()
         .lines()
         .map(|line| {

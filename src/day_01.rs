@@ -1,6 +1,6 @@
 pub fn print_answers() {
     println!("\n--- Day 1: Sonar Sweep ---");
-    let sonar = Sonar::new(&std::fs::read_to_string("assets\\day_1_input.txt").unwrap());
+    let sonar = Sonar::new(&std::fs::read_to_string("assets\\day_01_input.txt").unwrap());
     println!(
         "How many measurements are larger than the previous measurement? {}",
         sonar.count_depth_measurement_increases(),

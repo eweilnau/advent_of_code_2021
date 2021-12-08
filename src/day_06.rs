@@ -1,13 +1,13 @@
 pub fn print_answers() {
     println!("\n--- Day 6: Lanternfish ---");
     let mut population =
-        Population::new(&std::fs::read_to_string("assets\\day_6_input.txt").unwrap());
+        Population::new(&std::fs::read_to_string("assets\\day_06_input.txt").unwrap());
     println!(
         "How many lanterfish would there be after 80 days? {}",
         population.simulate(80)
     );
     let mut population =
-        Population::new(&std::fs::read_to_string("assets\\day_6_input.txt").unwrap());
+        Population::new(&std::fs::read_to_string("assets\\day_06_input.txt").unwrap());
     println!(
         "How many lanterfish would there be after 256 days? {}",
         population.simulate(256)

@@ -12,7 +12,7 @@ pub fn print_answers() {
 }
 
 fn get_diagnostic_report() -> Vec<u16> {
-    std::fs::read_to_string("assets\\day_3_input.txt")
+    std::fs::read_to_string("assets\\day_03_input.txt")
         .unwrap()
         .lines()
         .map(|line| u16::from_str_radix(&line, 2).unwrap())

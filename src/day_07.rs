@@ -1,6 +1,6 @@
 pub fn print_answers() {
     println!("\n--- Day 7: The Treachery of Whales ---");
-    let crabs = CrabFleet::new(&std::fs::read_to_string("assets\\day_7_input.txt").unwrap());
+    let crabs = CrabFleet::new(&std::fs::read_to_string("assets\\day_07_input.txt").unwrap());
     println!(
         "Using constant fuel rate, determine the position with the cheapest fuel cost. How much fuel must they spend to align to that position? {}",
         crabs.get_cheapest_constant_fuel_cost()

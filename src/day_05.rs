@@ -1,6 +1,6 @@
 pub fn print_answers() {
     println!("\n--- Day 5: Hydrothermal Venture ---");
-    let input = std::fs::read_to_string("assets\\day_5_input.txt").unwrap();
+    let input = std::fs::read_to_string("assets\\day_05_input.txt").unwrap();
     let map = VentMap::new(&input, false);
     println!(
         "Considering only horizontal and vertical vent lines, how many points do at least two vent lines overlap? {}",

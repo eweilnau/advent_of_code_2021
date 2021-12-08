@@ -1,7 +1,7 @@
 pub fn print_answers() {
     println!("\n--- Day 4: Giant Squid ---");
     let mut bingo =
-        BingoSubsystem::new(&std::fs::read_to_string("assets\\day_4_input.txt").unwrap());
+        BingoSubsystem::new(&std::fs::read_to_string("assets\\day_04_input.txt").unwrap());
     println!(
         "What will your final score be if you choose the board which will win first? {}",
         bingo.get_winning_score()
