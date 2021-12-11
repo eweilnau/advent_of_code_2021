@@ -7,6 +7,7 @@ mod day_06;
 mod day_07;
 mod day_08;
 mod day_09;
+mod day_10;
 
 fn main() {
     println!("Advent of Code 2021");
@@ -19,4 +20,5 @@ fn main() {
     day_07::print_answers();
     day_08::print_answers();
     day_09::print_answers();
+    day_10::print_answers();
 }
