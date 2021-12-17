@@ -49,18 +49,16 @@ impl SyntaxChecker {
         let mut scores = Vec::new();
         for chunk in input.lines() {
             if let Ok(completion) = Self::parse_chunk(chunk) {
-                scores.push(
-                    completion.chars().fold(0, |acc, c| {
-                        acc * 5
-                            + match c {
-                                ')' => 1,
-                                ']' => 2,
-                                '}' => 3,
-                                '>' => 4,
-                                _ => 0,
-                            }
-                    })
-                );
+                scores.push(completion.chars().fold(0, |acc, c| {
+                    acc * 5
+                        + match c {
+                            ')' => 1,
+                            ']' => 2,
+                            '}' => 3,
+                            '>' => 4,
+                            _ => 0,
+                        }
+                }));
             }
         }
         scores.sort();
